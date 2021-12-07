@@ -93,10 +93,10 @@ h1 {
 }
 
 .para-1 {
-    color: #FFDFD9;
+    color: #FFFFFF;
     line-height: 1.4;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
@@ -108,6 +108,7 @@ h2 {
     color: white;
     padding: 18px 45px;
     font-weight: 600;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.3);
 
 }
 
@@ -115,21 +116,22 @@ h2 span {
     color: #9992C5;
     font-weight: 300;
     font-size: 16px;
+  
 }
 
 
 fieldset {
     width: 100%;
-    box-shadow: 0px 3px 8px black;
     background-color: white;
     border-radius: 10px;  
     padding: 24px; 
     margin-top: 20px;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.3);
 }
 
 fieldset input {
     height: 55px;
-    border: 0.2px solid rgb(177,173,191);
+    border: 0.2px solid #cccc;
     display: block;
     width: 100%;
     border-radius: 10px;
@@ -155,6 +157,7 @@ fieldset button {
     font-weight: 600;
     border: 0;
     margin: 20px 0;
+    border-bottom: 4px solid rgba(0,0,0,0.3);
 }
 
 fieldset p {
