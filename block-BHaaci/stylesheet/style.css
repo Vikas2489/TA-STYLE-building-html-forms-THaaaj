@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom styles */
+
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px;
+    height: 100vh;
+}
+
+*, *::after,*::before{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    background: #FF7978;
+    background: url(../assets/bg-intro-desktop.png), linear-gradient(rgb(236,118,118),rgb(236,118,118));
+}
+
+/* flex */
+  
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-50 {
+    flex: 0 1 48%;
+}
+
+/* articles */
+
+
+h1 {
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.para-1 {
+    color: #FFDFD9;
+    line-height: 1.4;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+h2 {
+    background-color: #5D54A3;
+    border-radius: 13px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 18px 45px;
+    font-weight: 600;
+
+}
+
+h2 span {
+    color: #9992C5;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+fieldset {
+    width: 100%;
+    box-shadow: 0px 3px 8px black;
+    background-color: white;
+    border-radius: 10px;  
+    padding: 24px; 
+    margin-top: 20px;
+}
+
+fieldset input {
+    height: 55px;
+    border: 0.2px solid rgb(177,173,191);
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: rgb(177,173,191);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+fieldset button {
+    color: white;
+    background-color: rgb(102,205,138);
+    border-radius: 13px;
+    width: 100%;
+    text-align: center;
+    padding: 18px 45px;
+    font-weight: 600;
+    border: 0;
+    margin: 20px 0;
+}
+
+fieldset p {
+    color: grey;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+fieldset strong {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
