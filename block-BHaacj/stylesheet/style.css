@@ -1,0 +1,566 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* general styles */
+
+:root {
+    --primary: #69C6BA;
+    --secondary: #999B9C;
+    --tertiary: #C66995;
+
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-2 {
+    width: 900px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background: #E6E6E6;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.font-size {
+    font-size: 0;
+}
+
+/* flex */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-items {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-14 {
+    flex: 0 1 14%;
+}
+
+/* btn */
+
+.btn {
+   color: white;
+   outline: 0;
+   border: 0;
+   font-size: 16px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    padding: 16px 26px;
+    width: 96%;
+    margin: 54px 0px 0px 10px;
+}
+
+.btn-secondary {
+    width: 200px;
+    padding: 16px 18px;
+    margin: 0;
+    background: var(--primary);
+    margin: 20px;
+}
+
+.btn-tertiary {
+    outline: 0;
+   border: 0;
+   font-size: 16px;
+   color: var(--primary);
+   background: white;
+   padding: 16px 18px;
+}
+
+.pink {
+    color: var(--tertiary);
+}
+
+.show-btn {
+    padding: 15px 0;
+}
+
+/* main-header */
+
+.main-header {
+    padding: 28px 0;
+    background: white;
+}
+
+.main-header .brand-name {
+    color: black;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+
+.first-nav a {
+    color: black;
+    margin-right: 28px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.flex  .active {
+    color: var(--primary);
+}
+
+
+
+/* lets begin SECTION */
+
+.lets-begin-section {
+    background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(../assets/banner.jpg) no-repeat;
+    background-size: cover;
+    height: 800px; 
+    padding: 60px 0;
+}
+
+.article-1 {
+    text-align: center;
+    color: white;
+    padding: 25px 0;
+}
+
+.article-1 .circle {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 6px;
+    
+} 
+
+.circle-parent {
+    text-align: center;
+    display: inline-flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.circle-parent .big-circle {
+    height: 14px;
+    width: 14px; 
+    border-radius: 50%;
+}
+
+.article-1 h1 {
+    font-size: 50px;
+    line-height: 1;
+}
+
+.article-1-para {
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.down-icon {
+    background: var(--primary);
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    padding: 8.5px;
+    margin: 10px 0 20px 0;
+}
+
+.form-1 {
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    width: 900px;
+    padding: 32px;
+    margin-top: 50px;
+}
+
+
+.fieldset-1 {
+    width: 430px;
+    padding: 28px 0;
+}
+
+.label-desti {
+    display: block;
+    width: 96%;
+}
+
+.label-desti input {
+    width: 100%;
+}
+
+.fieldset-1 input {
+    outline: 0;
+    border: 0;
+    color: transparent;
+    height:  35px;
+}
+
+.fieldset-1 label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.check-in .form-control {
+    width: 200px;
+}
+
+.check-in {
+    margin-top: 20px;
+}
+
+.fieldset-1 input {
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.fieldset-2 {
+    width: 420px;
+    height: 175px;
+}
+
+.width-140 {
+    width: 160px;
+}
+
+.width-140 select {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.width-80 {
+    width: 100px;
+}
+
+.width-80  select {
+     width: 100%;
+     margin-top: 8px;
+}
+
+.fieldset-2 label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fieldset-2 select {
+    outline: 0;
+    border: 0;
+    color: rgba(46, 43, 43, 0.8);
+    height:  35px;
+}
+
+.fieldset-2 option {
+    color: var(--secondary);
+}
+
+
+/* your journey */
+
+
+
+.background {
+    background: rgb(239,239,239); 
+    padding: 30px 0;
+}
+
+.text-align {
+    text-align: center;
+     
+}
+
+.text-align h2 {
+    font-size: 29px;
+    font-weight: 350;
+}
+
+.text-align strong {
+    font-weight: 800;
+}
+
+.text-align p {
+    color: #686A6C;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* blog-on-countries */
+
+
+
+.europe-blog {
+    background: var(--primary);
+    padding: 24px 29px 28px 29px;
+    width: 600px;
+   position: absolute;
+   top: 90px;
+   left: 610px;
+}
+
+.europe-blog h3, p {
+    color: white;
+    font-size: 15px;
+    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
+.europe-blog h3 {
+    font-size: 40px;
+    font-weight: 350;
+    line-height: 1;
+}
+
+.country-1 {
+    position: relative;
+    background: white;
+}
+
+.left-and-right .icon {
+    height: 40px;
+    width: 40px;
+    background: rgba(0, 0, 0,0.5);
+    color: rgb(225,223,221);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    }
+ 
+.left-and-right {
+     position: absolute;
+     left: 526px;
+     top: 235px;
+}
+
+figure {
+    font-size: 0;
+}
+
+.right-align {
+    text-align: right;
+}
+
+ figure .img-1{
+     width: 650px;
+ }
+
+ .country-1  .pink-background {
+     background: var(--tertiary);
+     top: 90px;
+  
+     left: 100px;
+ }
+
+.lefts-and-rights {
+   top: 235px;
+   left: 699px;
+  
+} 
+
+.prime-background {
+    background: var(--primary);
+}
+
+
+.prime-background  .tertiary {
+    background: var(--tertiary);
+    text-align: center;
+}
+
+figcaption {
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
+
+.prime-background figure {
+    padding: 28px 0;
+}
+
+
+
+
+/* hotel-section */
+
+.hotel-section {
+    background: white;
+    padding: 50px 0;
+}
+
+.hotel-section h4 {
+   color: black;
+   font-weight: 400;
+   font-size: 20px;
+}
+
+.hotel-section .para-h-1 {
+    color: var(--tertiary);
+    margin: 0;
+    margin-top: 5px;
+}
+
+.hotel-section .para-h-2 {
+    color: #B5B2B3;
+    margin: 0;
+    margin: 15px 0;
+}
+
+.article-hotel-1 {
+    height: 180px;
+    margin-bottom: 20px;
+    
+}
+
+.continue {
+    background: var(--primary);
+    outline: 0;
+    border: 0;
+   height: 180px;
+   width: 240px;
+   color: white;
+   font-size: 20px;
+}
+
+.invisible {
+    height: 180px;
+    position: relative;
+}
+
+.image-curve {
+    position: absolute;
+    left: 0.3px;
+}
+
+.invisible span {
+    margin-top: 15px;
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+
+.resort-hotel {
+    margin-left: 20px;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+}
+
+.last-form {
+    position: absolute;
+    top: 90px;
+    left: 880px;
+}
+
+.last-form fieldset {
+    width: 380px;
+    padding: 20px;
+    background: white;
+    
+}
+
+.last-fieldset ::placeholder{
+   color: #B5BABE;
+}
+
+.last-fieldset input {
+    outline: 0;
+    height: 24px;
+    border: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+    margin-bottom: 10px;
+    padding: 18px;
+}
+
+.last-fieldset .email {
+    margin-left: 8px;
+}
+
+.last-fieldset textarea {
+    background-color: #F5F5F5;
+    border: 0;
+    width: 100%;
+    padding: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.margin{
+    margin-top: 10px;
+}
+.small {
+    font-size: 14px;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    background: var(--primary);
+}
