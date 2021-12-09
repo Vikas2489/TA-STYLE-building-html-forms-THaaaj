@@ -116,6 +116,11 @@ a {
    outline: 0;
    border: 0;
    font-size: 16px;
+   transition: box-shadow 300ms ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 0 8px rgba(46, 43, 43, 0.6);
 }
 
 .btn-primary {
@@ -227,11 +232,11 @@ a {
 
 .down-icon {
     background: var(--primary);
-    height: 34px;
-    width: 34px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    padding: 8.5px;
-    margin: 10px 0 20px 0;
+    line-height: 40px;
+    margin: 0 auto;
 }
 
 .form-1 {
@@ -564,3 +569,26 @@ footer {
     text-align: center;
     background: var(--primary);
 }
+
+
+.location {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(46, 43, 43, 0.6);
+    
+}
+
+
+/* prime background */
+
+.prime-background .flex-14:hover {
+    background-color: var(--tertiary);
+}
+
